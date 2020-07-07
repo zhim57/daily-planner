@@ -9,4 +9,4 @@ added a module to check current time vs planner time and color code the fields.
 
 ![screenshot app](planer1.jpg)
 
-![planner1.JPG](planer1_jpg)
+![/planner1.JPG](planer1_jpg)

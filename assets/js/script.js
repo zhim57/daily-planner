@@ -83,8 +83,13 @@ $(document).ready(function () {
         
         $("#clearAll").click(function (event) {
             (event).preventDefault();
+            
+            //added safeguard against deleting the tasks by mistake
             var doProceed = confirm("Are you sure you wish to proceed with clearing of All fields, all stored tasks  will be deleted? ");
+         
+         
             if (doProceed){
+                // clearing all fields and local storrage at once
             for (var i = 0; i < hoursJ.length; i++) {
                 localStorage.setItem(hoursJ[i], "");
 

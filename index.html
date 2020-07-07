@@ -14,45 +14,28 @@
   <script src="Assets/js/moment.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header class="jumbotron">
-    <h1 class="display-3">Work Day Scheduler</h1>
-    <p class="lead">A simple calendar app for scheduling your work day</p>
-    <p id="currentDay" class="lead"></p>
-  </header>
-  <div class="container">
-    <!-- Timeblocks go here -->
-    <form>
-      <div class="form-group">
-
-        <!-- <div class="row">
-          <div class="col-sm-1 hour-label">09:00</div>
-          <div class="col col-lg-10 nomar"><textarea class="hour-text"></textarea></div>
-          <div class="col-sm-1 nomar"><button class="saveBtn far fa-save saveIcon"></button></div>
-        </div> -->
-
-
-
-
-
-
-
-
+  </head>
+  
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <form>
+        <div class="form-group">
+        </div>
       </div>
-
       
-      
-    </div>
+      <button id="clearAll">Clear All!</button>
+    </form>
     
-    <button id="clearAll">Clear All!</button>
-  </form>
-
 
   </div>
-  </div>
-  <script src="/Assets/js/script.js"></script>
+</div>
+<script src="/Assets/js/script.js"></script>
 
 
 
@@ -64,6 +47,7 @@
     WHEN I scroll down
     - THEN I am presented with timeblocks for standard business hours (bootstrap input boxes/cards, just have to handle 9-5)
     WHEN I view the timeblocks for that day
+    
     - THEN each timeblock is color coded to indicate whether it is in the past, present, or future
     WHEN I click into a timeblock
     - THEN I can enter an event (form input)
@@ -97,12 +81,13 @@
     (buttonClickHandler func - (console.log(event.target)) handles click events for the generated city buttons, should render the 5-day forecast and current weather)
     WHEN I open the weather dashboard
     THEN I am presented with the last searched city forecast (see the first functions) (edited)  -->
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-</body>
-
-</html>
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+    <script >"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"</script>
+  </body>
+  
+  </html>

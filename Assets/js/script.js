@@ -28,21 +28,17 @@ for (var hour = 9; hour <= 17; hour++) {
 
     var dispRowJ = $("<div class=row>");
     dispRowJ.attr("id", hoursJ[i]);
-    var displayCol1 = $("<p class=col-sm-1 >");
+    var displayCol1 = $("<p class=col-sm-2 >");
     displayCol1.addClass("hour-label");
-    var textArea = $("<textarea class=col-lg-10>");
-    // displayCol2.addClass("data-hour",hoursJ[i]);
-    // displayCol2.addClass("nomar",hoursJ[i]);
-
-    // var displayCol3 = $("<div class=col-sm-1 nomar>");
-    // var ddddddd = $("<textarea class= hour-text >");
+    var textArea = $("<textarea class=col-md-8>");
+    
     textArea.attr("data-name", hoursJ[i])
 
-    // textArea.addClass("data-text",hoursJ[i]);
-    textArea.addClass("nomar");
+  
+    // textArea.addClass("nomar");
     
     displayCol1.text(hoursJ[i]);
-    var saveBtnJ = $("<button class=col-sm-1>");
+    var saveBtnJ = $("<button class=col-sm-2>");
     saveBtnJ.addClass("nomar");
     // saveBtnJ.addClass("saveIcon");
     saveBtnJ.addClass("saveBtn far fa-save saveIcon");

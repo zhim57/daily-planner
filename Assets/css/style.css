@@ -111,3 +111,12 @@ color:black;
   margin-top: 0px;
   padding-top: 30px;
 }
+#clearAll{
+  background-color: crimson;
+  color:white;
+  padding:30px;
+  margin-left:40%;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}

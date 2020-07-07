@@ -84,6 +84,17 @@ for (var i=0; i<hoursJ.length; i++){
     console.log(`#${hoursJ[i]}`)
     $(`#${hoursJ[i]} textarea`).val(hoursR);
 }
+$("#clearAll").click(function(event){
+    (event).preventDefault();
+    for (var i=0; i<hoursJ.length; i++){
+        localStorage.setItem(hoursJ[i],"");
+    
+        var hoursC =(localStorage.getItem(hoursJ[i]));
+     
+        $(`#${hoursJ[i]} textarea`).val(hoursC);
+    }
+});
+
 
 }
 displayPlanner();

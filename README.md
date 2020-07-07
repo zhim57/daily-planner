@@ -7,6 +7,6 @@ created a module to saving the input fields to the local storrage
 created a clear all button to clear all fields and the local storrage
 added a module to check current time vs planner time and color code the fields.
 
-![screenshot app](planer1.jpg)
+![screenshot working application](planner1.JPG)
 
 ![/planner1.JPG](planer1_jpg)

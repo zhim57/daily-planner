@@ -37,14 +37,14 @@ $(document).ready(function () {
 
         saveBtnJ.addClass("saveBtn far fa-save saveIcon");
 
-        if (hour<checkTime1){
-            $(textArea).css("background-color" , " lightGray");
+        if (hour < checkTime1) {
+            $(textArea).css("background-color", " lightGray");
         }
-        else if(hour == checkTime1){
-            $(textArea).css("background-color" , "lightSalmon");
+        else if (hour == checkTime1) {
+            $(textArea).css("background-color", "lightSalmon");
 
         }
-        else{
+        else {
             $(textArea).css("background", "lightGreen");
         }
 
@@ -76,10 +76,7 @@ $(document).ready(function () {
     var displayPlanner = function () {
 
         for (var i = 0; i < hoursJ.length; i++) {
-
-
             var hoursR = (localStorage.getItem(hoursJ[i]));
-
             $(`#${hoursJ[i]} textarea`).val(hoursR);
         }
         $("#clearAll").click(function (event) {

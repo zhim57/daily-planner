@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+  <script src="../Assets/js/moment.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <form>
+      <div class="form-group">
+
+        <!-- <div class="row">
+          <div class="col-sm-1 hour-label">09:00</div>
+          <div class="col col-lg-10 nomar"><textarea class="hour-text"></textarea></div>
+          <div class="col-sm-1 nomar"><button class="saveBtn far fa-save saveIcon"></button></div>
+        </div> -->
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+  </div>
+
+  </form>
+
+
+  </div>
+  </div>
+  <script src="../Assets/js/script.js"></script>
+
+
+
+  <!-- ## Acceptance Criteria
+    ```
+    GIVEN I am using a daily planner to create a schedule
+    WHEN I open the planner
+    - THEN the current day is displayed at the top of the calendar
+    WHEN I scroll down
+    - THEN I am presented with timeblocks for standard business hours (bootstrap input boxes/cards, just have to handle 9-5)
+    WHEN I view the timeblocks for that day
+    - THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+    WHEN I click into a timeblock
+    - THEN I can enter an event (form input)
+    WHEN I click the save button for that timeblock
+    - THEN the text for that event is saved in local storage
+    WHEN I refresh the page
+    - THEN the saved events persist
+    ??? functions ???
+    saveHandler - we need a function to handle click and save
+    displayCurrentTime - get current date and time and put it on the page (Moment.js)
+    renderColorCode - use moment.js (or alternatives in webapi) to get the current time "color code" (class and background-color)
+    renderCells - onLoad functions? or when the page is ready, we need to "render" any saved cells (defer document-ready? jquery timeout) (edited) 
+    
+    Anthony Maddatu (Instructor)  7:50 PM
+    Homework 6
+    ??? functions ???
+    WHEN I search for a city (form input, maybe some buttons)
+    THEN I am presented with current and future conditions for that city and that city is added to the search history
+    (displayCurrentWeather func - ($.ajax) api call and also displays current weather for city and saves the city)
+    (renderSavedCities func - render all saved city buttons onLoad (when the document is ready - defer), also render the last city)
+    WHEN I view current weather conditions for that city
+    THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index (see activity 5)
+    WHEN I view the UV index
+    THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe (use the API doc / google) 
+    (getUVClass func - process the UV index and return a class - background-color)
+    WHEN I view future weather conditions for that city
+    THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+    (display5Day func - ($.ajax) api call for forecasts, render the 5 days with icons for weather conditions)
+    WHEN I click on a city in the search history
+    THEN I am again presented with current and future conditions for that city
+    (buttonClickHandler func - (console.log(event.target)) handles click events for the generated city buttons, should render the 5-day forecast and current weather)
+    WHEN I open the weather dashboard
+    THEN I am presented with the last searched city forecast (see the first functions) (edited)  -->
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>

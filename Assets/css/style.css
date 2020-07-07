@@ -103,8 +103,11 @@ color:black;
   /* display:inline; */
  
   text-align: center;
+  
   vertical-align: middle;
   /* background-color: #77dd77; */
-  border: 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   margin-top: 0px;
+  padding-top: 30px;
 }
